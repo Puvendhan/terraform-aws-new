@@ -9,7 +9,7 @@ resource "aws_instance" "web-instance" {
     }    
 }
 
-resource "aws_instance" "new-instance" {
+resource "aws_instance" "test-instance" {
     ami = var.ami
     key_name = var.key_name
     count = 2
