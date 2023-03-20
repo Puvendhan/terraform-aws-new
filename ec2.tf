@@ -6,7 +6,7 @@ resource "aws_instance" "test-instance" {
     ami = local.ami
     key_name = "newapp"
     count = "1"
-    instance_type = "t2.micro"
+    instance_type = "t3.micro"
     security_groups = ["ssh-sg"]
     tags = {
         Name = "test-webapp-linux"
